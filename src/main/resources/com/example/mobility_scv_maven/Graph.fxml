@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="data" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mobility_scv_maven.Data_Controller">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <LineChart fx:id="gra1" legendSide="TOP" BorderPane.alignment="CENTER">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="speed" side="LEFT" upperBound="50.0">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont></NumberAxis>
+              </yAxis>
+            </LineChart>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
